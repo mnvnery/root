@@ -142,7 +142,6 @@ const Header = ({colour, bgColour}) => {
                 </div>
                 <div className='justify-self-end'><a href={`mailto:${siteMetadata.email}`}><div className='border border-black px-3 inline-block rounded-lg hover:bg-black hover:text-red'>GET IN TOUCH</div></a></div>
             </div>
-
         </div>
         </div>
         </>

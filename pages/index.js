@@ -32,6 +32,7 @@ export async function getStaticProps() {
 }
 
 export default function Home({data, work}) {
+  //
   return (
     <>
     <div className='bg-black'>
