@@ -21,10 +21,10 @@ function MyApp({ Component, pageProps }) {
             })(window,document,'script','dataLayer','GTM-NZBLC5W');
           `}
       </script>
+    </Head>
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZBLC5W" height="0" width="0" style={{display: "none", visibility: "hidden"}}></iframe>
     </noscript>
-    </Head>
     <Component {...pageProps} />
     <Footer/>
     </>
