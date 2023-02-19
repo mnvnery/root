@@ -59,7 +59,7 @@ const Header = ({colour, bgColour}) => {
                     <div>●</div>
                     <a href={siteMetadata.twitter} target='_blank' rel="noreferrer" className='hover:underline'>TWITTER</a>
                     <div>●</div>
-                    <a href={siteMetadata.instagram} className='hover:underline'>INSTAGRAM</a>
+                    <a href={siteMetadata.instagram} target='_blank' className='hover:underline'>INSTAGRAM</a>
                 </div>
                 <button
                     type="button"
