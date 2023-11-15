@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <link rel="shortcut icon" href="/favicon.ico" />
       <title>Root Media</title>
-      <meta name='description' content='Root is a complete media planning and buying service for nonprofits—the only one in the UK.'/>
+      <meta name='description' content='Specialists in media planning and buying for charity. Two decades of sector insight and fundraising success. Get in touch and be a big fish for once.'/>
       <script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
