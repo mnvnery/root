@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <link rel="shortcut icon" href="/favicon.ico" />
       <title>Root</title>
-      <meta name='description' content='Root is a complete media planning and buying service for nonprofits—the only one in the UK.'/>
+      <meta name='description' content='Specialists in media planning and buying for charity. Two decades of sector insight and fundraising success. Get in touch and be a big fish for once.'/>
     </Head>
     <div className='bg-purple'><Component {...pageProps} /></div>
     </>
