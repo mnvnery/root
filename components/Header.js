@@ -56,9 +56,9 @@ const Header = ({colour, bgColour}) => {
                 </Link>
                 <div className="flex space-x-2 text-xs md:text-base xxl:text-2xl">
                     <a href={siteMetadata.linkedin} target='_blank' rel="noreferrer" className='hover:underline'>LINKEDIN</a>
-                    <div>●</div>
+                    <div>●</div>{/* 
                     <a href={siteMetadata.twitter} target='_blank' rel="noreferrer" className='hover:underline'>TWITTER</a>
-                    <div>●</div>
+                    <div>●</div>*/}
                     <a href={siteMetadata.instagram} target='_blank' rel="noreferrer" className='hover:underline'>INSTAGRAM</a>
                 </div>
                 <button

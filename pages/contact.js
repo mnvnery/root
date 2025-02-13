@@ -63,7 +63,7 @@ export default function Contact({data, work, team}) {
                       </div>
                       <div className='border-t border-white md:border-t-0 pt-8 md:pt-0 md:ml-10 xxl:ml-14 text-lg md:text-3xl xxl:text-5xl xxl:leading-tight'>
                         <SoftMotion>
-                        <div><a href={data.twitterLink} target='_blank' rel='noreferrer' className='hover:text-purple'>Twitter</a></div>
+                        {/*<div><a href={data.twitterLink} target='_blank' rel='noreferrer' className='hover:text-purple'>Twitter</a></div>*/}
                         <div><a href={data.linkedinLink} target='_blank' rel='noreferrer' className='hover:text-purple'>LinkedIn</a></div>
                         <div><a href={data.instagramLink} target='_blank' rel='noreferrer' className='hover:text-purple'>Instagram</a></div>
                         </SoftMotion>
