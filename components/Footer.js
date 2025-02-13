@@ -31,9 +31,9 @@ const Footer = () => {
                 <div className="border-t border-white md:border-t-0 flex flex-col justify-between py-5 md:pt-10 md:pb-32 md:pl-7 xxl:pl-12">
                     <div></div>
                     <div>
-                    <div><a href={siteMetadata.twitter} target="_blank" rel="noreferrer" className="hover:underline">Twitter</a></div>
                     <div><a href={siteMetadata.instagram} target="_blank" rel="noreferrer" className="hover:underline">Instagram</a></div>
                     <div><a href={siteMetadata.linkedin} target="_blank" rel="noreferrer" className="hover:underline">Linkedin</a></div>
+                    <div><a href={siteMetadata.twitter} target="_blank" rel="noreferrer" className="hover:underline invisible">Twitter</a></div>
                     </div>
                 </div>
             </div>
