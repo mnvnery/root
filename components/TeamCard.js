@@ -12,7 +12,7 @@ const TeamCard = ({image, name, role, info, email, linkedin}) => {
             <div className="uppercase">{name}</div>
             <div className="uppercase">{role}</div>
             <div>—</div>
-            <div dangerouslySetInnerHTML={{__html: info}} className='mb-5'/>
+            <div dangerouslySetInnerHTML={{__html: info}} className='mb-5 underlined'/>
             {/*
             <div className="text-2xl md:text-3xl flex space-x-2 xxl:text-4xl">
                 <a href={email} className='hover:text-purple'><RiLinkedinBoxLine/></a>

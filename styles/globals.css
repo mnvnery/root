@@ -37,16 +37,24 @@ a {
   line-height: 1.1;
   margin-bottom: 35px;
 }
+.paragraph a {
+  text-decoration: underline;
+}
+
 .h2-text h2 {
   font-size: 2em;
   line-height: 1;
   margin-bottom: 25px;
 }
 
+
 .h2-text p {
   width: 45%;
 }
 
+.underlined a {
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   .paragraph h1 {
     font-size: 1.5em;

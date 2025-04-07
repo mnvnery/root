@@ -13,6 +13,7 @@ import SoftMotion from '../components/SoftMotion'
 import RightMotion from '../components/RightMotion'
 import LeftMotion from '../components/LeftMotion'
 import { motion } from 'framer-motion'
+import HighlightBanner from '../components/HighlightBanner'
 
 export async function getStaticProps() {
   const data = await request({
@@ -32,10 +33,11 @@ export async function getStaticProps() {
 }
 
 export default function Home({data, work}) {
-  //
+  console.log(data)
   return (
     <>
     <div className='bg-black'>
+      {data.bannerVisible && <HighlightBanner text={data.bannerText} ctaLink={data.bannerCtaLink} ctaText={data.bannerCtaText}/>}
       <Header colour='white' bgColour='black' />
       <Logo url='/ROOT-logo.svg'/>
       <div className='bg-purple'>
@@ -52,7 +54,7 @@ export default function Home({data, work}) {
             <div className='md:px-10 pt-7 md:pt-10 flex flex-col md:flex-row'>
             <SoftMotion>
             <div>
-                <div dangerouslySetInnerHTML={{__html: data.aboutHeading }} className='text-2xl md:text-4xl xxl:text-6xl'/>
+                <div dangerouslySetInnerHTML={{__html: data.aboutHeading }} className='underlined text-2xl md:text-4xl xxl:text-6xl'/>
                 <div className='text-lg xxl:text-4xl mt-10 md:mt-20'><Button text='Find out more +' href='/about'  mainColour='border-white hover:bg-white hover:text-black'/></div>
             </div>
             </SoftMotion>

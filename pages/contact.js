@@ -83,7 +83,7 @@ export default function Contact({data, work, team}) {
             <div className='bg-black text-white px-7 xxl:px-16 pt-16 pb-5'>
                   <div className='grid grid-cols-[0.5fr_1.5fr] text-xl md:text-4xl xxl:text-6xl xxl:leading-tight xxl:mb-20'>
                     <div className='mr-10'>MEET THE TEAM</div>
-                    <div dangerouslySetInnerHTML={{__html: team.teamIntro}} className='md:w-[45%]'/>
+                    <div dangerouslySetInnerHTML={{__html: team.teamIntro}} className='underlined md:w-[45%]'/>
                   </div>
                   <div className='grid grid-cols-2 md:grid-cols-3 gap-7 md:gap-14 my-10'>
                     {team.teamMembers.map((m, i) => (
