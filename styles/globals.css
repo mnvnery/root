@@ -41,6 +41,15 @@ a {
   text-decoration: underline;
 }
 
+.banner-flex p {
+  display: flex;
+  align-items: center;
+}
+
+.banner-flex img {
+  margin: 0 10px;
+  max-height: 2vh;
+ }
 .h2-text h2 {
   font-size: 2em;
   line-height: 1;
