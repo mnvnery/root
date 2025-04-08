@@ -56,7 +56,7 @@ export default function Home({data, articles}) {
                     <div>
                         <div>{firstArticle.title}</div>
                         <div>–</div>
-                        <div>{firstArticle.shortIntro}</div>
+                        <div dangerouslySetInnerHTML={{__html: firstArticle.shortIntro}} className='paragraph'/>
                     </div>
                     <div className='mt-10 md:mt-0 md:justify-self-end'>
                         <Button text='READ MORE +' href={`/journal/${firstArticle.slug}`} mainColour='border-white hover:bg-white hover:text-black'/>
@@ -76,7 +76,7 @@ export default function Home({data, articles}) {
                         </div>
                         <div>{article.title}</div>
                         <div>–</div>
-                        <div>{article.shortIntro}</div>
+                        <div dangerouslySetInnerHTML={{__html: article.shortIntro}} className='paragraph'/>
                         <div className='my-10'>
                         <Button text='READ MORE +' href={`/journal/${article.slug}`} mainColour='border-white hover:bg-white hover:text-black'/>
                         </div>
