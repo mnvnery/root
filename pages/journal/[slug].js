@@ -9,7 +9,7 @@ import Logo from '../../components/Logo'
 import TwoColLayout from '../../components/TwoColLayout'
 import SoftMotion from '../../components/SoftMotion'
 import LeftMotion from '../../components/LeftMotion'
-
+import SeoHead from '../../components/SeoHead'
 
 
 const ARTICLES_QUERY = `{
@@ -19,8 +19,10 @@ const ARTICLES_QUERY = `{
 }`
 
 export default function Article({ data, moreArticles }) {
+    //console.log(data)
     return (
         <>
+        <SeoHead seo={data.seo} fallbackTitle={data.title} fallbackImage={data.image?.url} />
         <div className='bg-darkPurple text-white'>
             <Header colour='white' bgColour='darkPurple'/>
             <Logo url='/ROOT-logo-black.svg'/>

@@ -36,10 +36,10 @@ export default function Clients({data, work}) {
     }, Object.create(null));
 
     for (const [key, value] of Object.entries(result)) {
-        console.log(`${key}`);
+        //console.log(`${key}`);
         const finalValue = value
         for (const [key, value] of Object.entries(finalValue)) {
-            console.log(value)
+            // console.log(value)
         }
     }
     return (
@@ -61,7 +61,6 @@ export default function Clients({data, work}) {
                             {
                                 Object.entries(result).map(([key, val]) => {
                                     const value = val
-                                    console.log(value)
                                     return (
                                     <div key={key} className='inline-block mb-4 xxl:mb-10'>
                                         <div className='border-b border-black mr-5'>{key}</div>

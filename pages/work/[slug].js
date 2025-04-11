@@ -10,6 +10,7 @@ import WorkList from '../../components/WorkList'
 import SoftMotion from '../../components/SoftMotion'
 import RightMotion from '../../components/LeftMotion'
 import { motion } from 'framer-motion'
+import SeoHead from '../../components/SeoHead'
 
 
 
@@ -22,6 +23,7 @@ const PROJECTS_QUERY = `{
 export default function CaseStudy({ data, moreProjects, work }) {
     return (
         <>
+        <SeoHead seo={data.seo} fallbackTitle={data.title} fallbackImage={data.thumbnail?.url} />
         <div className='bg-red'>
             <Header colour='black' bgColour='red'/>
             <Logo url='/ROOT-logo-white.svg'/>
