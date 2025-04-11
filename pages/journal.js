@@ -28,7 +28,6 @@ export async function getStaticProps() {
 
 export default function Home({data, articles}) {
     const firstArticle = articles[0]
-    console.log(new Date(firstArticle.date).getDate())
     const options = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
     return (
         <>
