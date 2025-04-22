@@ -21,6 +21,7 @@ const PROJECTS_QUERY = `{
 }`
 
 export default function CaseStudy({ data, moreProjects, work }) {
+    //console.log(data)
     return (
         <>
         <SeoHead seo={data.seo} fallbackTitle={data.title} fallbackImage={data.thumbnail?.url} />
