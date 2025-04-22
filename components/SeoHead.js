@@ -2,7 +2,6 @@ import Head from 'next/head'
 
 export default function SeoHead({ seo, fallbackTitle, fallbackImage }) {
   const ogImage = seo?.image?.url || fallbackImage
-
   console.log(seo)
   return (
     <Head>
