@@ -19,10 +19,10 @@ const ARTICLES_QUERY = `{
 }`
 
 export default function Article({ data, moreArticles }) {
-    //console.log(data)
+
     return (
         <>
-        <SeoHead seo={data.seo} fallbackTitle={data.title} fallbackImage={data.image?.url} />
+        <SeoHead seo={data.socialFields} fallbackTitle={data.title} fallbackImage={data.image?.url} />
         <div className='bg-darkPurple text-white'>
             <Header colour='white' bgColour='darkPurple'/>
             <Logo url='/ROOT-logo-black.svg'/>
